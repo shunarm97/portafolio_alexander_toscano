@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geostar&display=swap" rel="stylesheet">
+    <title>PORTAFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <link rel="icon" href="galery/bxs-hot.svg">
+</head>
+<body >
+    <header>
+        <h2 class="logo">ALEXANDER TOSCANO</h2>
+        <nav class="menu">
+            <a href="">INICIO</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#trabajos">PROYECTOS</a>
+            <a href="#contacto" >CONTACTO</a>
+        </nav>
+    </header>
+    <section class="banner">
+        <div class="sobre_mi">
+            <div class="foto">
+                <img src="galery/alex_photo.jpg" alt="foto_mia">
+            </div>
+            <div class="texto">
+                <h3>SOBRE MI</h3>
+                <p>Algunos creeran que es talento otros que fue suerte, yo prefiero llamarlo trabajo duro, largas hora de estudio con mas desepciones que logros inspirado en el "prueba y error", pero para mi lo mas importante es el aprendendizaje ademas que el trabajo en equipo es fundamental para mi </p>    
+            </div>
+            <a href="cv_alexander_2.pdf" class="btn-curriculum" target="blank">Desacargar CV</a>
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <h2>MIS SKILLS</h2>
+        <div class="conten-skill">
+            <div class="skill">
+                <img src="galery/bxl-html5.svg" alt="html">
+                <div class="progress-bar blue stripes shine">
+                    <span style="width: 60%"></span>
+                  </div>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <img src="galery/bxl-css3.svg" alt="css">
+                <div class="progress-bar blue stripes shine">
+                    <span style="width: 50%"></span>
+                  </div>
+                <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <img src="galery/bxl-javascript.svg" alt="JS">
+                <div class="progress-bar blue stripes shine">
+                    <span style="width: 45%"></span>
+                  </div>
+                <h3>JAVASCRIPT</h3>
+            </div>
+            <div class="skill">
+                <img src="galery/bxl-git.svg" alt="git">
+                <div class="progress-bar blue stripes shine">
+                    <span style="width: 45%"></span>
+                  </div>
+                <h3>GIT</h3>
+            </div>
+            <div class="skill">
+                <img src="galery/bxl-nodejs.svg" alt="nodejs">
+                <div class="progress-bar blue stripes shine">
+                    <span style="width: 10%"></span>
+                  </div>
+                <h3>NODE JS</h3>
+            </div>
+            <div class="skill">
+                <img src="galery/bxl-react.svg" alt="react">
+                <div class="progress-bar blue stripes shine">
+                    <span style="width: 0%"></span>
+                  </div>
+                <h3>REACT</h3>
+            </div>
+        </div>
+    </section>
+    <section class="trabajos" id="trabajos">
+        <h2>TRABAJOS REALIZADOS Y EN PROGRESO</h2>
+        <div class="area_trabajo">
+            <div class="estados">
+                <div class="estado_card">
+                    <div class="estado_perfil">
+                        <img src="galery/insta-clone.jpg" alt="usuario">
+                        <p class="users">Instagram - clone</p>
+                    </div>
+                </div>
+                <div class="estado_card">
+                    <div class="estado_perfil">
+                        <img src="galery/bxs-wrench.svg" alt="usuario">
+                        <p class="users">En progreso</p>
+                    </div>
+                </div>
+                <div class="estado_card">
+                    <div class="estado_perfil">
+                        <img src="galery/bxs-wrench.svg" alt="usuario">
+                        <p class="users">En progreso</p>
+                    </div>
+                </div>
+                <div class="estado_card">
+                    <div class="estado_perfil">
+                        <img src="galery/bxs-wrench.svg" alt="usuario">
+                        <p class="users">En progreso</p>
+                    </div>
+                </div>
+                <div class="estado_card">
+                    <div class="estado_perfil">
+                        <img src="galery/bxs-wrench.svg" alt="usuario">
+                        <p class="users">En progreso</p>
+                    </div>
+                </div>
+                <div class="estado_card">
+                    <div class="estado_perfil">
+                        <img src="galery/bxs-wrench.svg" alt="usuario">
+                        <p class="users">En progreso</p>
+                    </div>
+                </div>
+                <div class="estado_card">
+                    <div class="estado_perfil">
+                        <img src="galery/bxs-wrench.svg" alt="usuario">
+                        <p class="users">En progreso</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <h2>CONTACTO</h2>
+        <form action="https://formsubmit.co/alexander.1472gmail.com" method="post">
+            <div class="datos-form">
+                <div class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">  
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">  
+                </div>
+            </div>
+            <div class="mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
+            </div>
+            <div class="bt-enviar">
+                <button type="submit" class="enviar">Enviar Mensaje</button>
+            </div>
+        </form>
+        <div class="red">
+        <a href="https://www.facebook.com/alexander.toscano.9" class="facebook redes-social" target="blank" >facebook</a>
+        <a href="" class="whatsapp redes-social">whatsapp</a>
+        <a href="https://ec.linkedin.com/in/david-toscano-portillo-460785231" class="linkedl redes-social" target="blank">linkedl</a>
+    </div>
+    <a href="#" class="volver" >Volver al Inicio</a>
+    </section>
+</body>
+</html>

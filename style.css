@@ -1,0 +1,565 @@
+/* RESECT */
+body {
+    background-color: rgba(99, 105, 105, 0.863);
+   
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+/* HEADER */
+header {
+    height: 100px;
+    background-color: rgb(46, 44, 44);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+h2 {
+    font-family: 'Iceland', cursive;
+    font-size: 50px;
+    padding: 5px;
+}
+header h2:hover {
+    background-color: #34c2e3;
+    color: black;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.5s;
+    font-family: 'Iceland', cursive;
+    font-size: 15px;
+
+}
+header a:hover {
+    background-color: #34c2e3;
+    color: black;
+}
+/* BANNER */
+.banner {
+    padding: 0 50px;
+    background-image: url(./galery/calle-antigua.jpg);
+    height: 650px;
+    background-size: cover;
+    background-position: central;
+    border-radius: 0 0 80px 80px;
+    border-bottom: #1a1a1a 10px solid;
+}
+.banner::before {
+    content: '';
+    background: rgba(43, 44, 44, 0.527);
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    left: 0;
+    border-radius: 0 0 80px 80px;
+
+}
+.sobre_mi {
+    position: relative;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.texto {
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid red; */
+}
+.texto h3 {
+    font-family: 'Iceland', cursive;
+    font-size: 40px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.texto p {
+    text-align: justify;
+    line-height: 30px;
+}
+.foto {
+    width: 400px;
+    height: 400px;
+    /* border: double 10px black; */
+    border-radius: 20px;
+
+}
+.foto img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.btn-curriculum {
+    text-decoration: none;
+    font-family: 'Iceland', cursive; ;
+    color: white;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    align-self: baseline;
+    font-size: 22px;
+    margin-top: 525px;
+    margin-left: 20px;
+    background-color: rgba(43, 44, 44, 0.527);
+}
+.btn-curriculum:hover {
+    background-color:rgb(46, 44, 44) ;
+    transition: 0.5s;
+}
+/* BANNER  */
+.skills {
+    padding: 0 50px;
+    background-image: url(./galery/wallpaper.jpg);
+    height: 650px;
+    background-size: cover;
+    background-position: central;
+    border-radius: 80px 80px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #1a1a1a 10px solid;
+}
+/* .skills::before {
+    content: '';
+    background: rgba(43, 44, 44, 0.527);
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    left: 0;
+    border-radius: 80px 80px 80px 80px;
+} */
+.skills h2 {
+    color: white;
+}
+.conten-skill {
+display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: auto auto ;
+border: 2px solid white;
+width: 800px;
+height: 460px;
+box-sizing: border-box;
+gap: 20px;
+padding: 10px;
+background-color: rgba(99, 105, 105, 0.863) ;
+border-radius: 30px;
+align-items: center;
+justify-content: center;
+}
+.skill {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+.skill img {
+    width: 115xp;
+    height: 115px;
+}
+.skill:hover {
+    background-color: #34c2e3;
+    transition: 0.5s;
+}
+
+    /* BARRA DE PORCENTAJE */
+    .progress-bar {
+        background-color: #1a1a1a;
+        height: 25px;
+        padding: 5px;
+        width: 200px;
+        margin: 10px 0;         
+        border-radius: 5px;
+        box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;           
+      }
+      
+      .progress-bar span {
+        display: inline-block;
+        height: 100%;
+        border-radius: 3px;
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+        transition: width .4s ease-in-out; 
+        background-color: #ccc;   
+      }
+      
+      /**** GRADIENTS ****/
+      .blue span {
+        background-color: #34c2e3;   
+      }
+      
+      /* .orange span {
+        background-color: #fecf23;
+        background-image: linear-gradient(top, #fecf23, #fd9215);  
+      }   
+      
+      .green span {
+        background-color: #a5df41;
+        background-image: linear-gradient(top, #a5df41, #4ca916);  
+      } */
+      
+      /**** STRIPES ****/
+      .stripes span {
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+          transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+          transparent 75%, transparent);            
+      
+        animation: animate-stripes 3s linear infinite;             
+      }
+      
+      @keyframes animate-stripes {
+        0% {background-position: 0 0;} 100% {background-position: 60px 0;}
+      }
+      
+      /**** SHINE ****/
+      .shine span {
+        position: relative;
+      }
+      
+      .shine span::after {
+        content: '';
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        border-radius: 3px;
+        animation: animate-shine 2s ease-out infinite;             
+      }
+      
+      @keyframes animate-shine {
+        0% {opacity: 0; width: 0;}
+        50% {opacity: .5;}
+        100% {opacity: 0; width: 95%;}
+      }
+      
+      /**** GLOW ****/
+      .glow span {
+        box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;    
+        animation: animate-glow 1s ease-out infinite;          
+      }
+      
+      @keyframes animate-glow {
+        0% { box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;} 
+        50% { box-shadow: 0 5px 5px rgba(255, 255, 255, .3) inset, 0 -5px 5px rgba(255, 255, 255, .3) inset;} 
+        100% { box-shadow: 0 5px 5px rgba(255, 255, 255, .7) inset, 0 -5px 5px rgba(255, 255, 255, .7) inset;}
+      }
+      .trabajos {
+        padding: 0 50px;
+        background-image: url(./galery/wallpaper.jpg) ;
+        /* opacity: 0.5; */
+        height: 650px;
+        background-size: cover;
+        background-position: central;
+        border-radius: 80px 80px 80px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: #1a1a1a 10px solid;
+    }
+      .estados {
+        width: 900px;
+        height: 450px;
+        background: rgba(99, 105, 105, 0.863);
+        border: 2px solid white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        overflow:hidden;
+        overflow-x: auto;
+        border-radius: 10px;
+    }
+    .estado_card {
+        margin-left: 15px;
+    }
+    .estado_perfil {
+        width: 250px;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border: 2px solid rgb(14, 13, 13);
+        background-color: rgba(46, 44, 44, 0.582);
+    }
+    .estado_perfil:hover {
+        background-color: #34c2e3;
+        transition: 0.5s;
+    }
+    .estado_perfil img {
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .trabajos h2 {
+        color: white;
+    }
+.contacto {
+    padding: 0 50px;
+    background-image: url(./galery/wallpaper.jpg) ;
+    /* opacity: 0.5; */
+    height: 600px;
+    background-size: cover;
+    background-position: central;
+    border-radius: 80px 80px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #1a1a1a 10px solid;
+    gap: 10px;
+    /* margin-bottom: 20px; */
+}
+.contacto h2 {
+    color: white;
+}
+.contacto form {
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: #34c2e3;
+    border-radius: 10px;
+}
+.datos-form {
+    display: flex;
+}
+.datos-form div {
+    padding: 10px;
+    flex: 1;
+}
+form label{
+    display: block;
+    margin-bottom: 10px;
+}
+form input, form textarea {
+    background-color:rgba(46, 44, 44, 0.582) ;
+    border-radius: 10px;    
+    border: 2px solid #1a1a1a;
+    padding: 10px 5px;
+    outline: 0;
+    color: white;
+    width: 90%;
+}
+form input:focus, form textarea:focus {
+    border-color: black;
+    box-shadow: 0 0 0 1px black;
+}
+.mensaje {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.bt-enviar {
+    display: flex;
+    padding: 10px;
+}
+.enviar {
+    text-decoration: none;
+    font-family: 'Iceland', cursive; ;
+    color: white;
+    border: 2px solid gray;
+    padding: 10px 5px;
+    /* align-self: baseline; */
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: rgba(43, 44, 44, 0.527);
+    width: 100%;
+    
+}
+.enviar:hover {
+    background-color:rgb(46, 44, 44) ;
+    transition: 0.5s;
+}
+.red {
+    display: flex;
+    flex-direction: row;
+}
+.redes-social {
+    color: transparent;
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+.facebook{    
+background-image: url(galery/bxl-facebook-square.svg);
+}
+.whatsapp{    
+    background-image: url(galery/bxl-whatsapp-square.svg);
+    }
+.linkedl{    
+background-image: url(galery/bxl-linkedin-square.svg);
+}
+.redes-social:hover {
+    background-color: #34c2e3;
+    transition: 0.5s;
+}
+.volver {
+    text-decoration: none;
+    font-family: 'Iceland', cursive; ;
+    color: white;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    align-self: baseline;
+    font-size: 22px;
+    margin-left: 80%;
+    background-color: rgba(43, 44, 44, 0.527);
+}
+.volver:hover {
+    background-color:rgb(46, 44, 44) ;
+    transition: 0.5s;
+}
+/* RESPONVISE */
+@media screen and (min-width:320px) and (max-width: 768px) { 
+    
+header h2 {
+    font-size: 30px;
+}
+.menu {
+    flex-direction: column;
+}
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+ /* .banner::before {
+     height: auto;
+ } */
+.sobre_mi {
+    display: block;
+    flex-direction: column;
+    /* margin-top: 100px; */
+    width: auto;
+    height: auto;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+.sobre_mi .foto {
+    width: 90%;
+    height: 250px;
+    align-items: center;
+    margin:auto;
+}
+.sobre_mi h3 {
+    font-size: 30px;
+}
+.texto p {
+    line-height: 25px;
+}
+.texto {
+    height: auto;
+    margin-bottom: 40px;
+}
+.btn-curriculum {
+    margin: 0;
+    margin-left: 50%;
+}
+.skills { height: auto;
+}
+.skills h2 {
+    font-size: 30px;
+}
+.conten-skill {
+    height: auto;
+    width: 100%;
+    grid-template-columns: auto auto ;
+    grid-template-rows: auto auto;
+}
+.skill {
+    gap: 2px;
+}
+.skill img {
+    width: 50%;
+    height: 50%;
+}
+.estados {
+    display: flex;
+    width: 650px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.trabajos {
+    height: auto;
+}
+.trabajos h2 {
+    font-size: 30px;
+    text-align: center;
+}
+.volver {
+    padding: 0;
+}
+.contacto h2 {
+    font-size: 30px;
+}
+} 
+@media screen and (min-width:532px) and (max-width: 650px) { 
+    .estados {
+    width: 500px;
+    }
+}
+@media screen and (min-width:320px) and (max-width: 532px) { 
+    .estados {
+    width: 400px;
+    }
+    .progress-bar {
+        width: 150px;
+    }
+}
+@media screen and (min-width:320px) and (max-width: 443px) { 
+.texto {
+    width: auto;
+}
+
+.btn-curriculum {
+    padding: 0;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+}
+.conten-skill {
+grid-template-columns: auto;
+grid-template-rows: auto;
+}
+.estados {
+    width: 300px;
+    margin-bottom: 25px;
+}
+.sobre_mi {
+    /* gap: 0;
+    margin: 0; */
+    padding: 10px;
+}
+.texto p {
+    font-size: 16px;
+    line-height: 20px;
+}
+.foto img {
+    height: 240px;    
+}
+}
+@media screen and (min-width:769px) and (max-width: 903px) { 
+    .conten-skill {
+        width: auto;
+    }
+    .estados {
+        width: 700px;
+    }
+}
